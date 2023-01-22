@@ -1,0 +1,238 @@
+/*------------обнуление-----------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;/*из iphona*/
+}
+
+ul,/*из iphona*/
+ol,
+li {
+    padding: 0;/*из iphona*/
+    margin: 0;/*из iphona*/
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+/*------------HTML, BODY---------------*/
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #252b42;
+    background: #fafafa;
+    font-family: "Montserrat", sans-serif;
+}
+/*--------------------------------------*/
+/*.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}*/
+/*-----------CONTAINER------------*/
+.container {
+    max-width: 1046px;
+    margin: 0 auto;/* поставит "container" по средине "headera" */
+    padding: 0 15px;/*"отступы безопасности"*/
+}
+/*-------------HEADER-------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+.header-nav {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+}
+.header-menu {
+    margin: 0 0 0 133px;
+}
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-item:not(:last-child) {
+    margin: 0 21px 0 0;
+}
+.header-item a {
+    color: #737373;
+    font-weight: 600;
+    line-height: calc(24/14*100%);
+}
+/*--------------section class="main-page"-------------------*/
+.main-image {
+    position: relative;
+    top: 0;
+}
+.main-image img {
+    width: 100%;
+
+}
+.main-textandbutton {
+    position: absolute;
+    max-width: 400px;
+    z-index: 2;
+    padding: 184px 0 191px 0;
+}
+.main-textandbutton > *:not(:last-child) {
+    margin: 0 0 35px 0;
+}
+.main-title {
+    font-size: 58px;
+    line-height: 137%;
+    letter-spacing: 0.2px;
+    font-weight: 800;
+}
+.main-textline {
+    max-width: 360px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #737373;
+}
+.main-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
+}
+.main-buttons a {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 150%;
+    padding: 10px 36px;
+    border-radius: 36px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.main-buttons a:not(:last-child) {
+    margin-right: 10px;
+}
+.color {
+    background: #ff7b47;
+    color: #fff;
+}
+.nocolor {
+    border: 1px solid #0d5c63;
+    color: #0d5c63 ;
+}
+/*-----------------section class="main-services"-----------------*/
+.main-services {
+    margin-top: -100px;
+    position: relative;
+}
+.services-list {
+    display: flex;
+    margin: 0 -1px;
+}
+.services-item{
+    background-color: #fff;
+    padding: 35px;
+    box-shadow: 0 13px 19px rgb(0 0 0 / 7%);
+    height: 100%;
+}
+.item-inner > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.services-bigitem {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 33.333%;
+    padding: 0 15px;
+}
+.item-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 133%;
+}
+.item-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.item-color {
+    background-color: #0D5C63;
+    color: #fff;
+}
+/*-------------test------------------*/
+.benefit {
+    background: linear-gradient(133deg,#7F0B45, #5B3554, #38623a 85%);
+    min-height: 350px;
+}
+.test-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.test-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 80px 0 10px;
+}
+.test-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color:  #737373;
+    padding: 0 250px;
+}
+.test-bigitem {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    padding: 0 15px;
+}
+.test-item {
+    background-color: #fff;
+    text-align: center;
+    height: 100%
+}
+.test-item  > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.test-indicator {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+.test-text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
